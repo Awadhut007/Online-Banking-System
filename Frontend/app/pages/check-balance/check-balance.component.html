@@ -1,0 +1,10 @@
+<div class="check-balance-container">
+  <h2>Check Balance</h2>
+  <form (submit)="checkBalance(); $event.preventDefault()">
+    <input type="number" [(ngModel)]="userId" name="userId" placeholder="Enter Account ID" required />
+    <button type="submit">Check</button>
+  </form>
+
+  <p *ngIf="balance !== null">Available Balance: ₹{{ balance }}</p>
+  <p class="error" *ngIf="errorMsg">{{ errorMsg }}</p>
+</div>
