@@ -1,0 +1,13 @@
+<div class="deposit-form-container">
+  <h2>Deposit Funds</h2>
+
+  <form (submit)="deposit()">
+    <input type="number" [(ngModel)]="userId" name="userId" placeholder="Customer ID" required />
+    <input type="number" [(ngModel)]="amount" name="amount" placeholder="Amount to Deposit" required min="1" />
+
+    <button type="submit">Deposit</button>
+
+    <p class="success" *ngIf="successMsg">{{ successMsg }}</p>
+    <p class="error" *ngIf="errorMsg">{{ errorMsg }}</p>
+  </form>
+</div>

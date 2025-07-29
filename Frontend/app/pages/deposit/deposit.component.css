@@ -1,0 +1,82 @@
+.deposit-form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.deposit-form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 40px;
+  color: #333;
+}
+
+.deposit-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.deposit-form-container input {
+  padding: 12px 15px;
+  font-size: 25px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.deposit-form-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.deposit-form-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deposit-form-container button:hover {
+  background-color: #0056b3;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  font-weight: 600;
+  font-size: 29px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: 600;
+  font-size: 29px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .deposit-form-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .deposit-form-container h2 {
+    font-size: 25px;
+  }
+
+  .deposit-form-container input,
+  .deposit-form-container button {
+    font-size: 23px;
+    padding: 10px;
+  }
+}
