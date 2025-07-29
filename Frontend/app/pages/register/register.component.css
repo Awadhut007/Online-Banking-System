@@ -1,0 +1,70 @@
+.register-container {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background: linear-gradient(to right, #ffffff, #f2f3f5);
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 35px;
+  color: #333;
+}
+
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.register-container input {
+  padding: 12px 15px;
+  font-size: 25px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.register-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.register-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-container button:hover {
+  background-color: #0056b3;
+}
+
+.register-container .redirect {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.register-container .redirect a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-container .error {
+  color: red;
+  text-align: center;
+  font-weight: 600;
+  margin-top: -10px;
+  font-size: 25px;
+}
