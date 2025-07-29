@@ -1,0 +1,25 @@
+<div class="transaction-container">
+  <h2>Transaction History</h2>
+
+  <form (submit)="fetchTransactions(); $event.preventDefault()">
+    <input type="number" [(ngModel)]="userId" name="userId" placeholder="Enter User ID" required />
+    <button type="submit">Fetch Transactions</button>
+  </form>
+
+  <p class="error" *ngIf="errorMsg">{{ errorMsg }}</p>
+
+  <table *ngIf="transactions.length > 0">
+    <tr>
+      <th>ID</th>
+      <th>Type</th>
+      <th>Amount</th>
+      <th>Timestamp</th>
+    </tr>
+    <tr *ngFor="let tx of transactions">
+      <td>{{ tx.id }}</td>
+      <td>{{ tx.type }}</td>
+      <td>{{ tx.amount }}</td>
+      <td>{{ tx.timestamp | date: 'medium' }}</td>
+    </tr>
+  </table>
+</div>
