@@ -1,0 +1,91 @@
+.login-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff, #f3f3f3);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 35px;
+  color: #2c3e50;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-container input {
+  padding: 12px 15px;
+  font-size: 25px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.login-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.redirect {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.redirect a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.redirect a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .login-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .login-container h2 {
+    font-size: 22px;
+  }
+
+  .login-container input,
+  .login-container button {
+    font-size: 25px;
+    padding: 10px;
+  }
+}
