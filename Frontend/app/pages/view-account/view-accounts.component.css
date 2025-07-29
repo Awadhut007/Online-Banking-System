@@ -1,0 +1,66 @@
+.view-accounts-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #f3f4f6, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 25px;
+  color: #1e3a8a;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+thead {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+th, td {
+  padding: 14px 16px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+.error {
+  color: #dc2626;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.no-data {
+  color: #6b7280;
+  text-align: center;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  th, td {
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
