@@ -1,0 +1,25 @@
+<div class="withdraw-container">
+  <h2>Withdraw Funds</h2>
+
+  <form (submit)="withdrawFunds(); $event.preventDefault()" #withdrawForm="ngForm">
+    <input
+      type="number"
+      [(ngModel)]="userId"
+      name="userId"
+      placeholder="Enter User ID"
+      required
+      min="1"
+    />
+    <input
+      type="number"
+      [(ngModel)]="amount"
+      name="amount"
+      placeholder="Enter Amount"
+      required
+      min="1"
+    />
+    <button type="submit">Withdraw</button>
+
+    <p class="message" [ngClass]="{ success: isSuccess, error: !isSuccess }">{{ message }}</p>
+  </form>
+</div>
