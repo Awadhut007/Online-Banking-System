@@ -1,0 +1,14 @@
+<div class="transfer-container">
+  <h2>Transfer Funds</h2>
+
+  <form (submit)="transferMoney()">
+    <input type="number" [(ngModel)]="fromUserId" name="fromUserId" placeholder="From User ID" required />
+    <input type="number" [(ngModel)]="toUserId" name="toUserId" placeholder="To User ID" required />
+    <input type="number" [(ngModel)]="amount" name="amount" placeholder="Amount" required />
+
+    <button type="submit">Transfer</button>
+
+    <p class="success" *ngIf="successMsg">{{ successMsg }}</p>
+    <p class="error" *ngIf="errorMsg">{{ errorMsg }}</p>
+  </form>
+</div>
