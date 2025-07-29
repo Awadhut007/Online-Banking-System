@@ -1,0 +1,33 @@
+<div class="create-account-container">
+  <h2>Create Customer Bank Account</h2>
+
+  <form (submit)="createAccount()">
+    <input
+      type="text"
+      [(ngModel)]="accountHolderName"
+      name="accountHolderName"
+      placeholder="Account Holder Name"
+      required
+    />
+
+    <select [(ngModel)]="accountType" name="accountType" required>
+      <option value="" disabled selected>Select Account Type</option>
+      <option value="SAVINGS">Savings</option>
+      <option value="CURRENT">Current</option>
+    </select>
+
+    <input
+      type="text"
+      [(ngModel)]="balance"
+      name="balance"
+      placeholder="Initial Balance"
+      required
+      min="0"
+    />
+
+    <button type="submit">Create Account</button>
+
+    <p class="success" *ngIf="successMsg">{{ successMsg }}</p>
+    <p class="error" *ngIf="errorMsg">{{ errorMsg }}</p>
+  </form>
+</div>

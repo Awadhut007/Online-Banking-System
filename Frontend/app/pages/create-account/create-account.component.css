@@ -1,0 +1,81 @@
+.create-account-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.create-account-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #333;
+}
+
+.create-account-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-account-container input,
+.create-account-container select {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.create-account-container input:focus,
+.create-account-container select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.create-account-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-account-container button:hover {
+  background-color: #0056b3;
+}
+
+.create-account-container .success {
+  color: green;
+  text-align: center;
+  font-weight: 600;
+}
+
+.create-account-container .error {
+  color: red;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .create-account-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .create-account-container h2 {
+    font-size: 22px;
+  }
+
+  .create-account-container button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
